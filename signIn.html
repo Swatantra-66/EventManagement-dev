@@ -1,0 +1,175 @@
+<html>
+    <head><title>signIn.io</title>
+        <meta charset="UTF-8">
+        <meta name ="description" content ="Responsive Event Website">
+        <meta name ="author" content="Swatantra aka MaVeRicK">
+        <meta name  ="viewport" content ="width=device-width, initial-scale=1.0">
+        <meta name =  "keywords" content = "HTML,CSS,AuraEventts, Event Management">
+        <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="C:\Users\User\Desktop\Swatantra\signIn.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+        <script src="https://apis.google.com/js/api:client.js"></script>
+
+        </head>
+
+    <body>
+        <!--Google login-->
+        
+
+        <!-- <div id="my-signin2"></div>
+  <script>
+    function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+
+
+    var googleUser = {};
+  var startApp = function() {
+    gapi.load('auth2', function(){
+      // Retrieve the singleton for the GoogleAuth library and set up the client.
+      auth2 = gapi.auth2.init({
+        client_id: 'YOUR_CLIENT_ID.apps.googleusercontent.com',
+        cookiepolicy: 'single_host_origin',
+        // Request scopes in addition to 'profile' and 'email'
+        //scope: 'additional_scope'
+      });
+      attachSignin(document.getElementById('customBtn'));
+    });
+  };
+
+  function attachSignin(element) {
+    console.log(element.id);
+    auth2.attachClickHandler(element, {},
+        function(googleUser) {
+          document.getElementById('name').innerText = "Signed in: " +
+              googleUser.getBasicProfile().getName();
+        }, function(error) {
+          alert(JSON.stringify(error, undefined, 2));
+        });
+  } -->
+  </script>
+  <!--sign in section-->
+        <section class="Contact" id="contact">
+            <h1 class="heading">Sign<span> Up</span></h1>
+           
+            <form action="">
+                <div class="inputBox" id="nameId">
+                    <div class="icon1">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                    <input type="text" placeholder="Name">
+                </div>
+
+                <div class="inputBox">
+                    <div class="icon2">
+                    <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="inputBox">
+                    <div class="icon3">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                    <input type="number" placeholder="Phone">
+                </div>
+
+                <div class="inputBox">
+                    <div class="icon4">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                    <input type="password" placeholder="Password">
+                </div>
+                <p>Forgot Password? <a href="#">Click here!</a></p>
+                <input type="submit" value="Sign Up" class="btn" id="signupBtn">
+                <input type="submit" value="Sign In" class="btn" id="signinBtn">
+                <br><br><br><br>
+                <iframe src="https://developers.google.com/frame/identity/sign-in/web/demos/signin_contextual_custom.jshtml"  class="google"></iframe>
+            </form>
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <div class="item item-1"></div>
+                <div class="item item-2"></div>
+                <div class="item item-3"></div>
+                <div class="item item-4"></div>
+                <div class="item item-5"></div>
+                <div class="item item-6"></div>
+                <div class="item item-7"></div>
+                <div class="item item-8"></div>
+            </div>
+        </section>
+
+        <footer class="wrapp">
+            <section>
+                <div>
+                    <div class="item item-1"></div>
+                    <div class="item item-2"></div>
+                    <div class="item item-3"></div>
+                    <div class="item item-4"></div>
+                    <div class="item item-5"></div>
+                    <div class="item item-6"></div>
+                    <div class="item item-7"></div>
+                    <div class="item item-8"></div>
+                </div>
+            </section>
+
+        </footer>
+
+        <!-- <div class="container">
+            <div class="form-box">
+                <h1>Sign Up</h1>
+                <form>
+                    <div class="input-grp">
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="Name">
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="Email">
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div> -->
+
+        <!-- <div class="g-signin2" data-width="300" data-height="200" data-longtitle="true"></div>
+
+
+        <div id="gSignInWrapper">
+            <span class="label">Sign in with:</span>
+            <div id="customBtn" class="customGPlusSignIn">
+              <span class="icon"></span>
+              <span class="buttonText">Google</span>
+            </div>
+          </div>
+          <div id="name"></div>
+          <script>startApp();</script>
+
+        <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>   -->
+        <script src="C:\Users\User\Desktop\Swatantra\signIn.js"></script>
+    </body>

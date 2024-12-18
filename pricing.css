@@ -1,0 +1,100 @@
+.price .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 1.5rem;
+
+}
+
+.price .box-container .box{
+    padding: 2rem 0;
+    background: #333;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.price .box-container .box:hover{
+    transform: scale(1.05);
+
+}
+
+.price .box-container .box .title{
+    background: var(--main-color);
+    color: #fff;
+    padding: 1.5rem;
+    font-size: 2rem;
+}
+
+.price .box-container .box .amt{
+    color: #fff;
+    padding-top: 1.5rem 0;
+    font-size: 4rem;
+
+}
+
+.price .box-container .box ul{
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+.price .box-container .box ul li{
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+.price .box-container .box ul li i{
+    color: var(--main-color);
+    padding-right: 1.5rem;
+}
+
+
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+
+}
+
+.services .box-container .box{
+    border-radius: .5rem;
+    background: #333;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.services .box-container .box i{
+    height:6rem ;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    background: var(--main-color);
+    color: #fff;
+}
+
+.services .box-container .box h3{
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 0; 
+
+}
+
+.services .box-container .box p{
+    font-size: 1.4rem;
+    color: #eee;
+    line-height: 1.8;
+}
+
+.services .box-container .box h3:hover{
+    color: var(--main-color);
+    transition: 0.5s color;
+    animation-name: fade-in;
+    animation-duration: 2.5s;
+} 
+
+
+@keyframes fade-in {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
